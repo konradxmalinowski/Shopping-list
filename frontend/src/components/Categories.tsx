@@ -15,9 +15,16 @@ const Categories = ({
 }) => {
   console.log(allCategories);
 
-  const groupedCategories: Record<string, ItemType[]> = Object.groupBy(
-    items,
-    (item: ItemType) => item.category_name ?? []
+  const groupedCategories: Record<string, ItemType[]> = items.reduce(
+    (acc, item) => {
+      const category = item.category_name ?? 'Unknown';
+      if (!acc[category]) {
+        acc[category] = [];
+      }
+      acc[category].push(item);
+      return acc;
+    },
+    {} as Record<string, ItemType[]>
   );
 
   return (
