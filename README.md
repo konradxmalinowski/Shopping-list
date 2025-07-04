@@ -165,16 +165,4 @@ node index.js    # Start the server
 
 ## 📝 License
 
-This project is licensed under the ISC License.
-
-## 🙏 Acknowledgments
-
-- Built with ❤️ using modern web technologies
-- Special thanks to the React and Node.js communities
-- Inspired by the need for a simple, efficient shopping list app
-
----
-
-**Happy Shopping! 🛒✨**
-
-*Made with love and lots of coffee ☕* 
+This project is licensed under the MIT License.
