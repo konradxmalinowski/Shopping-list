@@ -20,6 +20,12 @@ const NewItem = ({
       return;
     }
 
+    if (newValue.length > 200) {
+      alert('Too long!!');
+      console.log('Too long!!');
+      return;
+    }
+
     const result = await addItem(newValue, categoryName);
 
     if (!result?.success) {

@@ -13,7 +13,7 @@ const Category = ({
 }) => {
   return (
     <div className="w-full flex flex-col gap-y-2.5">
-      <span className="font-medium text-2xl">{title}</span>
+      <span className="font-medium text-xl">{title}</span>
       {items.map((item: ItemType) => (
         <Item
           value={item.item_name}
